@@ -7,7 +7,8 @@ from google import genai
 from model import load_and_preprocess, compute_similarity, recommend  # Cleaned up imports
 
 # Initialize Gemini Client
-client = genai.Client(api_key='AQ.Ab8RN6Io0v8KOrAIAhkGFvuM6hhMOSMQSUctnxBwi7vZxXOxFA')
+# genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
+client = genai.Client(api_key=st.secrets["GOOGLE_API_KEY)
 
 st.set_page_config(page_title="AI Based Personalized Movie & Recommender System ", layout="wide")
 
